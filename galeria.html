@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Mi Reproductor de YouTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="barra">
+      <a class="logo" href="index.html">▶ Mi <span>Reproductor</span></a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reproductor.html">Reproductor</a>
+        <a href="galeria.html" class="activo">Galería</a>
+        <a href="como-funciona.html">¿Cómo funciona?</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Galería de videos</h1>
+    <p>Elegí un video y se abre en el reproductor.</p>
+
+    <div class="grilla">
+
+      <!-- La miniatura se pide a YouTube con: https://img.youtube.com/vi/ID/hqdefault.jpg -->
+      <!-- El enlace manda el ID al reproductor así: reproductor.html?v=ID -->
+      <div class="tarjeta">
+        <img src="https://img.youtube.com/vi/jNQXAC9IVRw/hqdefault.jpg" alt="Me at the zoo">
+        <h3>Me at the zoo</h3>
+        <p>El primer video subido a YouTube.</p>
+        <a class="boton" href="reproductor.html?v=jNQXAC9IVRw">▶ Reproducir</a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg" alt="Big Buck Bunny">
+        <h3>Big Buck Bunny</h3>
+        <p>Corto animado de Blender.</p>
+        <a class="boton" href="reproductor.html?v=aqz-KE-bpKQ">▶ Reproducir</a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="https://img.youtube.com/vi/eRsGyueVLvQ/hqdefault.jpg" alt="Sintel">
+        <h3>Sintel</h3>
+        <p>Otro corto animado de Blender.</p>
+        <a class="boton" href="reproductor.html?v=eRsGyueVLvQ">▶ Reproducir</a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg" alt="Gangnam Style">
+        <h3>Gangnam Style</h3>
+        <p>Uno de los videos más vistos de la historia.</p>
+        <a class="boton" href="reproductor.html?v=9bZkp7q19f0">▶ Reproducir</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Trabajo Práctico Final · 4.º año · Autor: <strong>TU NOMBRE</strong> · 2026</p>
+    <p>
+      <a href="index.html">Inicio</a> |
+      <a href="reproductor.html">Reproductor</a> |
+      <a href="galeria.html">Galería</a> |
+      <a href="como-funciona.html">¿Cómo funciona?</a> |
+      <a href="contacto.html">Contacto</a>
+    </p>
+  </footer>
+
+</body>
+</html>

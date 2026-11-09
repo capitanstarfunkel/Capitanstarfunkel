@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor | Mi Reproductor de YouTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="barra">
+      <a class="logo" href="index.html">▶ Mi <span>Reproductor</span></a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reproductor.html" class="activo">Reproductor</a>
+        <a href="galeria.html">Galería</a>
+        <a href="como-funciona.html">¿Cómo funciona?</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Reproductor</h1>
+    <h2 id="titulo-video">Me at the zoo</h2>
+
+    <!-- El video de YouTube va dentro de un iframe -->
+    <div class="video">
+      <iframe
+        id="player"
+        src="https://www.youtube-nocookie.com/embed/jNQXAC9IVRw"
+        title="Reproductor de YouTube"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h3>Elegí otro video:</h3>
+    <!-- Cada botón guarda el ID del video en data-id y su título en data-titulo -->
+    <button class="boton" data-id="jNQXAC9IVRw" data-titulo="Me at the zoo">Me at the zoo</button>
+    <button class="boton" data-id="aqz-KE-bpKQ" data-titulo="Big Buck Bunny">Big Buck Bunny</button>
+    <button class="boton" data-id="eRsGyueVLvQ" data-titulo="Sintel">Sintel</button>
+    <button class="boton" data-id="9bZkp7q19f0" data-titulo="Gangnam Style">Gangnam Style</button>
+
+    <p style="margin-top:16px;">
+      <a class="boton" href="galeria.html">← Volver a la galería</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>Trabajo Práctico Final · 4.º año · Autor: <strong>TU NOMBRE</strong> · 2026</p>
+    <p>
+      <a href="index.html">Inicio</a> |
+      <a href="reproductor.html">Reproductor</a> |
+      <a href="galeria.html">Galería</a> |
+      <a href="como-funciona.html">¿Cómo funciona?</a> |
+      <a href="contacto.html">Contacto</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

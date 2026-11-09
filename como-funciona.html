@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Cómo funciona? | Mi Reproductor de YouTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="barra">
+      <a class="logo" href="index.html">▶ Mi <span>Reproductor</span></a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reproductor.html">Reproductor</a>
+        <a href="galeria.html">Galería</a>
+        <a href="como-funciona.html" class="activo">¿Cómo funciona?</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>¿Cómo funciona el reproductor?</h1>
+
+    <div class="tarjeta">
+      <h3>1. El ID del video</h3>
+      <p>Cada video de YouTube tiene un código único en su dirección. Es lo que viene después de <strong>v=</strong>.</p>
+      <pre><code>https://www.youtube.com/watch?v=jNQXAC9IVRw
+                                 ↑ este es el ID</code></pre>
+    </div>
+    <br>
+
+    <div class="tarjeta">
+      <h3>2. La etiqueta iframe</h3>
+      <p>Un <strong>iframe</strong> muestra una página dentro de otra. YouTube nos da una dirección especial para eso (<strong>/embed/</strong>):</p>
+      <pre><code>&lt;iframe src="https://www.youtube-nocookie.com/embed/ID" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+    </div>
+    <br>
+
+    <div class="tarjeta">
+      <h3>3. Cambiar de video con JavaScript</h3>
+      <p>Los botones guardan el ID del video. Al hacer clic, JavaScript cambia el <strong>src</strong> del iframe por el nuevo ID.</p>
+      <pre><code>player.src = "https://www.youtube-nocookie.com/embed/" + id;</code></pre>
+    </div>
+    <br>
+
+    <div class="tarjeta">
+      <h3>4. Enviar el video desde la galería</h3>
+      <p>La galería enlaza a <strong>reproductor.html?v=ID</strong>. El reproductor lee ese ID de la dirección y carga el video.</p>
+    </div>
+    <br>
+
+    <a class="boton" href="reproductor.html">▶ Probar el reproductor</a>
+  </main>
+
+  <footer>
+    <p>Trabajo Práctico Final · 4.º año · Autor: <strong>TU NOMBRE</strong> · 2026</p>
+    <p>
+      <a href="index.html">Inicio</a> |
+      <a href="reproductor.html">Reproductor</a> |
+      <a href="galeria.html">Galería</a> |
+      <a href="como-funciona.html">¿Cómo funciona?</a> |
+      <a href="contacto.html">Contacto</a>
+    </p>
+  </footer>
+
+</body>
+</html>
